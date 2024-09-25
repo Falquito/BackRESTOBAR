@@ -125,9 +125,9 @@ app.post("/create_preference", (req, res) => {
 			// }
 		,
 		back_urls: {
-			"success": "http://localhost:5173/success",
-			"failure": "http://localhost:5173",
-			"pending": "http://localhost:5173"
+			"success": "https://effulgent-ganache-a0c2ae.netlify.app/success",
+			"failure": "https://effulgent-ganache-a0c2ae.netlify.app",
+			"pending": "https://effulgent-ganache-a0c2ae.netlify.app"
 		},
 		auto_return: "approved",
 	};
