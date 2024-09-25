@@ -11,6 +11,8 @@ import mysql from 'mysql2/promise'
 import { Server } from 'socket.io'
 import {createServer} from 'node:http'
 
+const PORT = process.env.PORT ?? 8080
+
 
 //CONEXION A MYSQL
 //creo la conexion
@@ -260,6 +262,6 @@ app.get('/traerProductos',async (req,res)=>{
 		res.status(500).json(error)
 	}
 })
-server.listen(8080, () => {
-	console.log("The server is now running on Port 8080");
+server.listen(PORT, () => {
+	console.log(`running on ${PORT}`);
 });
