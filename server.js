@@ -48,13 +48,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("../../client/html-js"));
 app.use(cors({
-	origin:'https://66f410366afcd8196dd6821f--effulgent-ganache-a0c2ae.netlify.app',
+	origin:'https://effulgent-ganache-a0c2ae.netlify.app',
 	methods:['GET','POST','PATCH','PUT','DELETE']
 }));
 const server = createServer(app)
 const io = new Server(server,{
 	cors:{
-		origin:'https://66f410366afcd8196dd6821f--effulgent-ganache-a0c2ae.netlify.app/',
+		origin:'https://effulgent-ganache-a0c2ae.netlify.app',
 		methods:['GET','POST','PATCH'],
 	}
 })
