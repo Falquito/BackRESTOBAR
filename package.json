@@ -1,0 +1,23 @@
+{
+  "name": "mp-card-payment-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "debug": "nodemon --inspect=5005 server.js"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "mercadopago": "1.5.8",
+    "multer": "^1.4.5-lts.1",
+    "muster": "^0.9.3",
+    "mysql2": "^3.11.3",
+    "socket.io": "4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
