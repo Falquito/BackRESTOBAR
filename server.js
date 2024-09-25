@@ -24,11 +24,11 @@ const PORT = process.env.PORT ?? 8080
 //     database:'Tienda'
 // })
 const connection = await mysql.createConnection({
-	host:'2803:9800:9402:b7ec:8945:b1e3:8741:ba69',
-    user:'joel',
+	host:'b7qwgzvtz0fa38vofcff-mysql.services.clever-cloud.com',
+    user:'ur2tnqnbnxxnl2fx',
     port:3306,
-    password:'serenateamo1',
-    database:'Tienda'
+    password:'crOXAmX7fsAf6FOo1nIu',
+    database:'b7qwgzvtz0fa38vofcff'
 })
 const app = express();
 
